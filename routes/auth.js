@@ -1,0 +1,38 @@
+const router = require('express').Router();
+const User = require('../models/User')
+const bcrypt = require('bcrypt')
+
+//signup with a mew user
+router.post('/signup',async (req,res)=>{
+    //Generating password
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(req.body.password,salt);
+    //Creating a user
+    const newUser = await new User({
+        username:req.body.username,
+        email:req.body.email,
+        password:hashedPassword
+    })
+    try{
+        //save a user and respond
+        const user = await newUser.save();
+        res.status(200).send("user added")
+    }catch(error){
+        res.status(500).json(error)
+    }
+})
+
+//login with a user
+router.post('/login',async (req,res)=>{
+    await User.findOne({email:req.body.email}).then((user)=>{
+        bcrypt.compare(req.body.password,user.password).then(()=>{
+            res.status(200).json(user)
+        }).catch((error)=>{
+            res.status(500).json(error)
+        })
+    }).catch((error)=>{
+        res.status(500).json(error)
+    })
+})
+
+module.exports = router
