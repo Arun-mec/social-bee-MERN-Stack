@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 
 const userRouter = require('./routes/user')
 const authRouter = require('./routes/auth')
+const postRouter = require('./routes/post')
 //configuring the dotenv variable
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(morgan());
 
 app.use('/api/user',userRouter);
 app.use('/api/auth',authRouter);
+app.use('/api/post',postRouter);
 
 app.listen(process.env.port || 5000,()=>{
     console.log('listening on port');

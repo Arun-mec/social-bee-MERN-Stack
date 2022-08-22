@@ -1,0 +1,87 @@
+.loginWrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: #EEEEEE;
+}
+.loginWrapperleft{
+    flex:6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    justify-content: center;
+}
+.loginHeading{
+    font-size: 80px;
+    color:#0059FF;
+}
+.loginWrapperright{
+    flex:4;
+    display: flex;
+    padding-right:250px ;
+    justify-content: center;
+}
+.loginDiv{
+    background-color: white;
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.15);
+}
+.loginInputdiv{
+    width: 80%;
+    height:40px;
+    border-radius: 2px;
+    border: 0.1px solid #a1a1a1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.loginInputfield{
+    border: none;
+    width: 100%;
+}
+.loginInputfield:focus{
+    outline: none;
+}
+.loginButton{
+    width: 83%;
+    color: white;
+    background-color: #0059FF;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.loginButton:hover{
+    background-color: #0048cd;
+}
+.forgotPasswordlink{
+    margin: 15px;
+    cursor: pointer;
+}
+.forgotPasswordlink:hover{
+    text-decoration: underline;
+}
+.newAccountButton{
+    width: 83%;
+    color: white;
+    background-color:#03b600;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.newAccountButton:hover{
+    background-color: #039d00;
+}

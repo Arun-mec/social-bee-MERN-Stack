@@ -1,0 +1,28 @@
+.Closefriends{
+    flex:3;
+}
+.closefriendsWrapper{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+.closefriendProfilephoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.profileFollowingPhoto{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.profileFollowingUser{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300px;
+
+}

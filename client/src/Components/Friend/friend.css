@@ -1,0 +1,21 @@
+.leftbarListitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.leftbarListitem:hover{
+    background-color: #F1F1F1;
+}
+.leftbarListitemText{
+    margin-left: 15px;
+}
+.leftbarImage{
+    height:40px;
+    width:40px;
+    object-fit: cover;
+    border-radius: 50px;
+}

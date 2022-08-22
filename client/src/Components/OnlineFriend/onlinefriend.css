@@ -1,0 +1,25 @@
+.rightbarFriendItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+}
+.rightbarFriendItem:hover{
+    background-color: #F1F1F1;
+}
+
+.onlineIconGreen{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(0, 192, 0);
+    border-radius: 50%;
+    position: relative;
+    top:2px;
+    left:-10px;
+    border:2px solid white;
+}
+.rightbarListitemText{
+    padding-left: 10px;
+}
